@@ -24,4 +24,4 @@ após as flags especificadas, passe o endereço alvo, nesse caso a url alvo do t
 Ao final do teste, no terminal você receberá uma saída com o relatório.
 
 Observações:
-Se você receber erro de URL Inválida, provavelmente esqueceu de terminar sua URL com uma barra ( /). apache-benchmark é exigente quanto a isso.
+Se você receber erro de URL Inválida, provavelmente esqueceu de terminar sua URL com uma barra ( /). Apache-benchmark é exigente quanto a isso.
