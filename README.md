@@ -10,7 +10,7 @@ $ docker pull marcosvile/ab
 
 Comando para iniciar o contêiner juntamente com o comando para envio das requisições de teste de stress:
 ```
-$ docker run --rm jordi/ab -n 2000 -c 200 https://[url]/
+$ docker run --rm marcosvile/ab -n 2000 -c 200 https://[url]/
 ```
 
 
