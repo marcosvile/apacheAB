@@ -1,24 +1,24 @@
 # ApacheAB
-O Apache Benchmark (ab) é uma ferramenta de linha de comando que pode ser usada para realizar testes de desempenho em servidores web. Com o ab, você pode simular o tráfego de vários usuários em um servidor web, medir o tempo de resposta do servidor e obter informações sobre a capacidade do servidor em lidar com a carga.
+Apache Benchmark (ab) is a command-line tool that can be used to perform performance tests on web servers. With ab, you can simulate traffic from multiple users on a web server, measure the server's response time, and obtain information about the server's capacity to handle the load.
 
-# Como utilizar a ferramenta
+# How to use the tool
 
-Comando para iniciar o contêiner juntamente com o comando para envio das requisições de teste de stress:
+Command to start the container along with the command to send stress test requests:
 ```
 $ docker run --rm marcosvile/ab -n 2000 -c 200 https://[url]/
 ```
 
-Detalhamento das flags utilizadas no comando apache-benchmark:
+Details of the flags used in the apache-benchmark command:
 
-`docker run --rm marcosvile/ab` - docker run para iniciar o contêiner e a flag `--rm` indica que o contêiner será removido ao final da execução, não deixando lixo após a execução.
+`docker run --rm marcosvile/ab` - docker run to start the container and the `--rm` flag indicates that the container will be removed at the end of the execution, leaving no residue after execution.
 
-`-n 2000` - número de requisições executadas para o teste
+`-n 2000` - number of requests executed for the test
 
-`-c 200` - número de requisições simultâneas que será executado
+`-c 200` - number of simultaneous requests that will be executed
 
-após as flags especificadas, passe o endereço alvo, nesse caso a url alvo do teste - https://`[url]`/
+after the specified flags, pass the target address, in this case, the target URL of the test - https://`[url]`/
 
-Ao final do teste, no terminal você receberá uma saída com o relatório.
+At the end of the test, you will receive a report output in the terminal.
 
-Observações:
-Se você receber erro de URL Inválida, provavelmente esqueceu de terminar sua URL com uma barra ( /). Apache-benchmark é exigente quanto a isso.
+Notes:
+If you receive an Invalid URL error, you probably forgot to end your URL with a slash (/). Apache-benchmark is strict about this.
